@@ -41,8 +41,7 @@ RUN apt-get install -y php7.2-cli \
     && rm -rf /var/lib/apt/lists/*
 
 #XDEBUG
-RUN pecl install xdebug-2.6.0 \
-    && docker-php-ext-enable xdebug
+RUN pecl install xdebug-2.6.0 && docker-php-ext-enable xdebug
 
 # Configure PHP-FPM
 RUN rm /etc/php/7.2/fpm/php.ini /etc/php/7.2/fpm/php-fpm.conf /etc/php/7.2/fpm/pool.d/www.conf
