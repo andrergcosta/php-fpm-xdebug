@@ -1,4 +1,4 @@
-FROM andrergcosta/ubuntu
+FROM brzdigital/ubuntu
 
 MAINTAINER "Andre Costa" <andrergcosta@gmail.com>
 
