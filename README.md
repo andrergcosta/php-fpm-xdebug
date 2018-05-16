@@ -1,2 +1,2 @@
 # PHP-FPM
-PHP-FPM to use with NGINX.
+PHP-FPM, with xdebug enabled, for use with NGINX.
