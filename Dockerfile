@@ -47,7 +47,7 @@ ADD config/php-fpm.conf /etc/php/7.2/fpm/php-fpm.conf
 ADD config/www.conf /etc/php/7.2/fpm/pool.d/www.conf
 
 #XDEBUG
-RUN pecl install xdebug-2.6.0 \
+RUN pecl install xdebug-2.5.5 \
     && docker-php-ext-enable xdebug
 
 COPY ./xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
